@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --bg-body: #1A1924;
+  --bg-received: #633BBC;
+  --bg-send: #07847E;
+  --bg-input: #282843;
+  --text-gray: #E1E1E6;
+  --text-green: #00B37E;
+  --font-body: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-gray);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1 {
+  overflow-wrap: break-word;
+}
+
+p, input {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+}
+
+body {
+  background: var(--bg-body);
+  font-family: var(--font-body);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1.5rem 2rem;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile__title {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.188rem;
+}
+
+.profile__status {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.profile__status p {
+  color: var(--text-green);
+}
+
+.close__image {
+  cursor: pointer;
+}
+
+main {
+  margin-top: 1.625rem;
+}
+
+.chat {
+  display: grid;
+}
+
+.datetime__title {
+  text-align: center;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+}
+
+.message__block--left {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.message__block--right {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.message__title {
+  margin-top: 1.875rem;
+}
+
+.message__received,
+.message__sent {
+  margin-top: 0.625rem;
+  max-width: 9.375rem;
+  padding: 0.875rem;
+}
+
+.message__received {
+  background: var(--bg-received);
+  border-radius: 0px 8px 8px 8px;
+}
+
+.message__sent {
+  background: var(--bg-send);
+  border-radius: 8px 8px 0px 8px;
+}
+
+.send {
+  margin-top: 3.375rem;
+  position: relative;
+}
+
+.send__input {
+  width: 100%;
+  background: var(--bg-input);
+  border: none;
+  outline: none;
+  border-radius: 62.438rem;
+  padding: 1.188rem 1.5rem;
+}
+
+.send__input::placeholder {
+  color: var(--text-gray);
+}
+
+.send__image {
+  position: absolute;
+  right: 24px;
+  top: 16px;
+  cursor: pointer;
+}
+
+@media (min-width: 820px) {
+  .container {
+    padding: 2rem 4.5rem;
+  }
+
+  .message__received,
+  .message__sent {
+    max-width: 27.75rem;
+  }
+}
+
