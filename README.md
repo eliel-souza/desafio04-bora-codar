@@ -12,13 +12,10 @@
 
 &nbsp;
 
-&nbsp;
-
 ## Sobre o Projeto
 
 O desafio é criar um chat mobile/desktop responsivo, e deixá-lo o mais próximo possível do design.
 Você pode usar qualquer ferramenta que desejar para ajudá-lo a concluir o desafio.
-Abaixo temos algumas definições que precisam ser atendidas.
 
 ## Construído com
 
