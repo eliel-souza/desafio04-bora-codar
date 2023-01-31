@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Chat</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- Container User -->
+        <div class="user">
+          <!-- Container Photo -->
+          <div class="photo">
+            <img src="./images/photo.png" alt="foto do usuário">
+          </div>
+          <!-- Container Profile -->
+          <div class="profile">
+            <h1 class="profile__title">Cecilia Sassaki</h1>
+
+            <div class="profile__status">
+              <img src="./images/status-online.svg" alt="icone status online">
+              <p>Online</p>
+            </div>
+          </div>
+        </div>
+        <!-- Container Close -->
+        <div class="close">
+          <img class="close__image" src="./images/close.svg" alt="botão de fechar o chat">
+        </div>
+      </header>
+
+      <main>
+        <div class="chat">
+          <!-- Container Datetime -->
+          <div class="datetime">
+            <p class="datetime__title">Hoje 11:30</p>
+          </div>
+          <!-- Container Message -->
+          <div class="message">
+            <div class="message__block message__block--left">
+              <p class="message__title">Cecilia - 11:30</p>
+              <p class="message__received">Tive uma ideia incrível para um projeto! 😍</p>
+            </div>
+
+            <div class="message__block message__block--right">
+              <p class="message__title">Você - 11:32</p>
+              <p class="message__sent">Sério? Me conta mais.</p>
+            </div>
+
+            <div class="message__block message__block--left">
+              <p class="message__title">Cecilia - 11:34</p>
+              <p class="message__received">E se a gente fizesse um chat moderno e responsivo em apenas uma semana?</p>
+            </div>
+
+            <div class="message__block message__block--right">
+              <p class="message__title">Você - 11:36</p>
+              <p class="message__sent">#boraCodar! 🚀</p>
+            </div>
+          </div>
+          <!-- Container Send -->
+          <div class="send">
+            <input class="send__input" type="text" placeholder="Digite sua mensagem">
+            <img class="send__image" src="./images/send.svg" alt="botão de enviar mensagem">
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
